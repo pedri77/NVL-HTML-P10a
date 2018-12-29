@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios I</title>
+</head>
+<body>
+    <p>Nos gustaría conocer tu opinión de forma anónima. ¿Puedes contestarnos a estas pequeñas preguntas que solo te robaran 1 minuto?:</p>
+    <form method="POST" action="miservidor.php">
+        <!-- Enviamos todo este contenido a nuestro servidor -->
+        <div>
+            <label for="código_postal">Introduce tu Código Postal:</label>
+            <input id=”código_postal” type=”text”>
+        </div>
+        <br>
+        <div>
+            <label for="satisfaccion">Introduce el nivel de satisfacción del producto:</label>
+            <select name="satisfaccion" id="satisfaccion">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email del consumidor:</label>
+            <input type="email" name="email" id="email">
+            </div>
+        </div>
+        <br>
+        <div>
+            <label for="positivos">Puntos positivos del producto:</label>
+            <textarea name="positivos" id="positivos"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="negativos">Puntos negativos del producto:</label>
+            <textarea name="negativos" id="negativos"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="sabor">¿Qué te ha parecido el sabor?:</label>
+            <select name="sabor" id="sabor">
+                    <option value="excelente">excelente</option>
+                    <option value="bueno">bueno</option>
+                    <option value="regular">regular</option>
+                    <option value="pesimo">pesimo</option>
+                    <option value="muy_pesimo">muy pesimo</option>
+            </select>
+
+        </div>
+        <br>
+        <div>
+            <label for="sabor">¿Qué te ha parecido la textura?:</label>
+            <select name="textura" id="textura">
+                <option value="excelente">excelente</option>
+                <option value="bueno">bueno</option>
+                <option value="regular">regular</option>
+                <option value="pesimo">pesimo</option>
+                <option value="muy_pesimo">muy pesimo</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="sabor">¿Qué te ha parecido el olor?:</label>
+            <select name="olor" id="olor">
+                <option value="excelente">excelente</option>
+                <option value="bueno">bueno</option>
+                <option value="regular">regular</option>
+                <option value="pesimo">pesimo</option>
+                <option value="muy_pesimo">muy pesimo</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="sabor">¿Qué te ha parecido la presentación?:</label>
+            <select name="presentación" id="presentación">
+                <option value="excelente">excelente</option>
+                <option value="bueno">bueno</option>
+                <option value="regular">regular</option>
+                <option value="pesimo">pesimo</option>
+                <option value="muy_pesimo">muy pesimo</option>
+            </select>
+        </div>
+      
+      
+
+    </form>
+    
+</body>
+</html>
